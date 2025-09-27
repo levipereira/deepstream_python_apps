@@ -75,7 +75,7 @@ add_library(pyds SHARED src/pyds.cpp src/utils.cpp src/bindanalyticsmeta.cpp
             src/bindmeta360.cpp src/bindnvbufsurface.cpp src/bindnvdsinfer.cpp
             src/bindnvdsmeta.cpp src/bindnvosd.cpp src/bindopticalflow.cpp
             src/bindschema.cpp src/bindtrackermeta.cpp src/custom_binding/bindcustom.cpp
-            src/bindpreprocessmeta.cpp src/bindroimeta.cpp)
+            src/custom_binding/bindcamera.cpp src/bindpreprocessmeta.cpp src/bindroimeta.cpp)
 
 set_target_properties(pyds PROPERTIES PREFIX "")
 set_target_properties(pyds PROPERTIES OUTPUT_NAME "pyds")

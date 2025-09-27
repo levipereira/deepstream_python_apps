@@ -609,6 +609,12 @@ namespace pydsdoc
 
             :returns: Allocated :class:`CustomDataStruct`)pyds";
 
+        constexpr const char* alloc_camera_meta=R"pyds( 
+            Allocate a :class:`CameraInfoMeta` for camera metadata. 
+
+            :arg user_meta: An object of type :class:`NvDsUserMeta` to configure copy/release functions.
+            :returns: Allocated :class:`CameraInfoMeta`)pyds";
+
         constexpr const char* configure_source_for_ntp_sync=R"pyds(
             Configure the source to generate NTP sync values for RTSP sources.
 

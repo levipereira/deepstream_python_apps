@@ -32,5 +32,18 @@ namespace pydsdoc
 
             constexpr const char* cast=R"pyds(cast given object/data to :class:`CustomDataStruct`, call pyds.CustomDataStruct.cast(data))pyds";
         }
+
+        namespace CameraInfoMetaDoc
+        {
+            constexpr const char* descr = R"pyds(
+                Holds camera metadata information for DeepStream nvmultiurisrcbin.
+
+                :ivar camera_id: *str*, Camera identifier from REST API.
+                :ivar source_id: *int*, Source identifier assigned by DeepStream.
+                :ivar camera_name: *str*, Camera name from REST API.
+                :ivar camera_url: *str*, Camera URL/URI from REST API.)pyds";
+
+            constexpr const char* cast=R"pyds(cast given object/data to :class:`CameraInfoMeta`, call pyds.CameraInfoMeta.cast(data))pyds";
+        }
     }
 }
