@@ -12,7 +12,7 @@ function usage() {
   echo ""
   echo "Example: $0 --version 1.1.4"
   echo "Example: $0 --build-bindings"
-  echo "Example: $0 --build-bindings -r master"
+  echo "Example: $0 --build-bindings -r feature/cameraInfo-UserMeta-downstream-support "
   exit 1
 }
 
@@ -47,7 +47,7 @@ then
     echo "#################################"
 fi
 
-# git clone -b "$remote_branch" https://github.com/NVIDIA-AI-IOT/deepstream_python_apps.git
+git clone -b "$remote_branch" https://github.com/levipereira/deepstream_python_apps.git
 
 if [ $? -eq 0 ]; then
    echo "deepstream_python_apps cloned successfully from branch $remote_branch"
@@ -133,3 +133,4 @@ then
         exit 1
     fi
 fi
+
