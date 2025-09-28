@@ -386,12 +386,11 @@ def main(args):
     pgie.set_property("batch-size", max_batch_size)
     
     # Configure tiler for maximum batch size
-    tiler_rows = int(math.sqrt(max_batch_size))
-    tiler_columns = int(math.ceil((1.0 * max_batch_size) / tiler_rows))
-    tiler.set_property("rows", tiler_rows)
-    tiler.set_property("columns", tiler_columns)
+    tiler.set_property("rows", 1)
+    tiler.set_property("columns", 1)
     tiler.set_property("width", TILED_OUTPUT_WIDTH)
     tiler.set_property("height", TILED_OUTPUT_HEIGHT)
+    tiler.set_property("square-seq-grid", 1)
     sink.set_property("qos", 0)
 
     # Set tracker properties
