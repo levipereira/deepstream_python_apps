@@ -392,6 +392,11 @@ def main(args):
     tiler.set_property("height", TILED_OUTPUT_HEIGHT)
     tiler.set_property("square-seq-grid", 1)
     sink.set_property("qos", 0)
+    sink.set_property("async", False)
+    sink.set_property("max-lateness", -1)
+    sink.set_property("qos", False)
+    sink.set_property("sync", False)
+ 
 
     # Set tracker properties
     config = configparser.ConfigParser()
@@ -506,4 +511,5 @@ def main(args):
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv))
+
 
