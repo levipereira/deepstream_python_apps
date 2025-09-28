@@ -28,6 +28,7 @@
 #include "bindschema.hpp"
 #include "bindtrackermeta.hpp"
 #include "custom_binding/include/bindcustom.hpp"
+#include "custom_binding/include/bindcamera.hpp"
 #include "bindpreprocessmeta.hpp"
 #include "bindroimeta.hpp"
 
@@ -67,6 +68,7 @@ namespace pydeepstream {
         bindopticalflowmeta(m);
         bindutils(m);
         bindcustom(m);
+        bindcamera(m);
         bindpreprocessmeta(m);
         bindroimeta(m);
     }   // end PYBIND11_MODULE(pyds, m)
